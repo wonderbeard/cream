@@ -10,8 +10,22 @@ import Foundation
 
 struct IceCream {
     var name: String
-    var weight: Double
+    var weight: Double?
     var color: String?
     var flavor: String?
     var temp: String?
+}
+
+extension IceCream {
+    
+    static var empty: IceCream {
+        return IceCream(
+            name: "",
+            weight: nil,
+            color: nil,
+            flavor: nil,
+            temp: nil
+        )
+    }
+    
 }

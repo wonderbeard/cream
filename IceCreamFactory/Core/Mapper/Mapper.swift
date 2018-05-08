@@ -13,20 +13,20 @@ protocol Mapper {
     associatedtype Input
     associatedtype Output
     
-    func map(_ input: Input) throws -> Output
+    func map(_ input: Input) -> Output
     
 }
 
 struct AnyMapper<Input, Output>: Mapper {
     
-    private let performMap: (Input) throws -> Output
+    private let performMap: (Input) -> Output
     
     init<M: Mapper>(_ wrapped: M) where M.Input == Input, M.Output == Output {
         performMap = wrapped.map
     }
     
-    func map(_ input: Input) throws -> Output {
-        return try performMap(input)
+    func map(_ input: Input) -> Output {
+        return performMap(input)
     }
     
 }

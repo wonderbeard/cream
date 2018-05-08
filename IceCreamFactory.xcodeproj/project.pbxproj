@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91165D9620A22A060034D120 /* CreateIceCreamViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165D9520A22A060034D120 /* CreateIceCreamViewInterface.swift */; };
+		91165D9820A22EB10034D120 /* CreateIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165D9720A22EB10034D120 /* CreateIceCreamViewController.swift */; };
+		91165D9A20A22EC60034D120 /* CreateIceCreamViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91165D9920A22EC60034D120 /* CreateIceCreamViewController.storyboard */; };
+		91165D9E20A234DC0034D120 /* CreateIceCreamPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165D9D20A234DC0034D120 /* CreateIceCreamPresenter.swift */; };
+		91165DA120A234FF0034D120 /* CreateIceCreamInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA020A234FF0034D120 /* CreateIceCreamInteractorInterface.swift */; };
+		91165DA320A2353A0034D120 /* CreateIceCreamPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA220A2353A0034D120 /* CreateIceCreamPresenterInterface.swift */; };
+		91165DA520A240AE0034D120 /* BidirectionalMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA420A240AE0034D120 /* BidirectionalMapper.swift */; };
+		91165DA820A243C70034D120 /* CreateIceCreamModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA720A243C70034D120 /* CreateIceCreamModuleAssembly.swift */; };
+		91165DAA20A2442F0034D120 /* CreateIceCreamInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA920A2442F0034D120 /* CreateIceCreamInteractor.swift */; };
+		91165DAD20A2471D0034D120 /* IceCreamWeightMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */; };
 		91CE876B20A0DA3C0029B367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91CE876A20A0DA3C0029B367 /* GoogleService-Info.plist */; };
 		91CE876D20A0DAC90029B367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91CE876C20A0DAC90029B367 /* GoogleService-Info.plist */; };
 		91CE877020A0DF1A0029B367 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE876F20A0DF1A0029B367 /* IceCream.swift */; };
@@ -32,6 +42,16 @@
 		040C9F5B2D9D03957C7E3C9B /* Pods-IceCreamViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceCreamViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceCreamViewer/Pods-IceCreamViewer.release.xcconfig"; sourceTree = "<group>"; };
 		4402A2591170EE1BF919C9C6 /* Pods-IceCreamViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceCreamViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceCreamViewer/Pods-IceCreamViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		5D1D8336127F0E0508EB1E43 /* Pods-IceCreamFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceCreamFactory.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceCreamFactory/Pods-IceCreamFactory.release.xcconfig"; sourceTree = "<group>"; };
+		91165D9520A22A060034D120 /* CreateIceCreamViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamViewInterface.swift; sourceTree = "<group>"; };
+		91165D9720A22EB10034D120 /* CreateIceCreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamViewController.swift; sourceTree = "<group>"; };
+		91165D9920A22EC60034D120 /* CreateIceCreamViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateIceCreamViewController.storyboard; sourceTree = "<group>"; };
+		91165D9D20A234DC0034D120 /* CreateIceCreamPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamPresenter.swift; sourceTree = "<group>"; };
+		91165DA020A234FF0034D120 /* CreateIceCreamInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamInteractorInterface.swift; sourceTree = "<group>"; };
+		91165DA220A2353A0034D120 /* CreateIceCreamPresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamPresenterInterface.swift; sourceTree = "<group>"; };
+		91165DA420A240AE0034D120 /* BidirectionalMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalMapper.swift; sourceTree = "<group>"; };
+		91165DA720A243C70034D120 /* CreateIceCreamModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamModuleAssembly.swift; sourceTree = "<group>"; };
+		91165DA920A2442F0034D120 /* CreateIceCreamInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamInteractor.swift; sourceTree = "<group>"; };
+		91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamWeightMapper.swift; sourceTree = "<group>"; };
 		91CE876A20A0DA3C0029B367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91CE876C20A0DAC90029B367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91CE876F20A0DF1A0029B367 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
@@ -89,6 +109,61 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		91165D9B20A234BB0034D120 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91165D9520A22A060034D120 /* CreateIceCreamViewInterface.swift */,
+				91165D9720A22EB10034D120 /* CreateIceCreamViewController.swift */,
+				91165D9920A22EC60034D120 /* CreateIceCreamViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91165D9C20A234CF0034D120 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91165DA220A2353A0034D120 /* CreateIceCreamPresenterInterface.swift */,
+				91165D9D20A234DC0034D120 /* CreateIceCreamPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		91165D9F20A234F30034D120 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91165DA020A234FF0034D120 /* CreateIceCreamInteractorInterface.swift */,
+				91165DA920A2442F0034D120 /* CreateIceCreamInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		91165DA620A243B10034D120 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				91165DA720A243C70034D120 /* CreateIceCreamModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		91165DAB20A2470E0034D120 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		91165DAE20A24B3A0034D120 /* CreateIceCream */ = {
+			isa = PBXGroup;
+			children = (
+				91165D9B20A234BB0034D120 /* View */,
+				91165D9C20A234CF0034D120 /* Presenter */,
+				91165D9F20A234F30034D120 /* Interactor */,
+				91165DA620A243B10034D120 /* Assembly */,
+			);
+			path = CreateIceCream;
+			sourceTree = "<group>";
+		};
 		91CE876E20A0DF0A0029B367 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +181,13 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		91CE877820A0E8820029B367 /* UI */ = {
+		91CE877820A0E8820029B367 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				91165DAB20A2470E0034D120 /* Shared */,
+				91165DAE20A24B3A0034D120 /* CreateIceCream */,
 			);
-			path = UI;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		91CE877920A0E8A50029B367 /* Resources */ = {
@@ -153,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				91CE878220A0EF350029B367 /* Mapper.swift */,
+				91165DA420A240AE0034D120 /* BidirectionalMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -181,10 +259,10 @@
 			isa = PBXGroup;
 			children = (
 				91E650BC20A0D7EA0093800E /* AppDelegate.swift */,
-				91CE877A20A0E9DA0029B367 /* Services */,
 				91CE877120A0DF870029B367 /* Core */,
 				91CE876E20A0DF0A0029B367 /* Domain */,
-				91CE877820A0E8820029B367 /* UI */,
+				91CE877820A0E8820029B367 /* Modules */,
+				91CE877A20A0E9DA0029B367 /* Services */,
 				91CE877920A0E8A50029B367 /* Resources */,
 				91E650C820A0D7EC0093800E /* Info.plist */,
 				91CE876A20A0DA3C0029B367 /* GoogleService-Info.plist */,
@@ -300,6 +378,7 @@
 			files = (
 				91E650C720A0D7EC0093800E /* LaunchScreen.storyboard in Resources */,
 				91CE876B20A0DA3C0029B367 /* GoogleService-Info.plist in Resources */,
+				91165D9A20A22EC60034D120 /* CreateIceCreamViewController.storyboard in Resources */,
 				91E650C420A0D7EC0093800E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,10 +500,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91165D9620A22A060034D120 /* CreateIceCreamViewInterface.swift in Sources */,
+				91165DAA20A2442F0034D120 /* CreateIceCreamInteractor.swift in Sources */,
+				91165D9820A22EB10034D120 /* CreateIceCreamViewController.swift in Sources */,
+				91165DA820A243C70034D120 /* CreateIceCreamModuleAssembly.swift in Sources */,
+				91165DA320A2353A0034D120 /* CreateIceCreamPresenterInterface.swift in Sources */,
+				91165D9E20A234DC0034D120 /* CreateIceCreamPresenter.swift in Sources */,
 				91CE877E20A0ED430029B367 /* FirebaseReadableRepository.swift in Sources */,
 				91E650BD20A0D7EA0093800E /* AppDelegate.swift in Sources */,
 				91CE878020A0ED510029B367 /* FirebaseWritableRepository.swift in Sources */,
 				91CE877520A0E7710029B367 /* WritableRepository.swift in Sources */,
+				91165DAD20A2471D0034D120 /* IceCreamWeightMapper.swift in Sources */,
+				91165DA520A240AE0034D120 /* BidirectionalMapper.swift in Sources */,
+				91165DA120A234FF0034D120 /* CreateIceCreamInteractorInterface.swift in Sources */,
 				91CE878320A0EF350029B367 /* Mapper.swift in Sources */,
 				91CE877720A0E7840029B367 /* ReadableRepository.swift in Sources */,
 				91CE877020A0DF1A0029B367 /* IceCream.swift in Sources */,

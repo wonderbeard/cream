@@ -7,8 +7,12 @@
 //
 
 import Foundation
+import FirebaseDatabase
 
-class FirebaseWritableRepository<Entity>: WritableRepository {
+struct FirebaseWritableRepository<Entity>: WritableRepository {
+    
+    var route: DatabaseReference
+    var entityMapper: AnyMapper<Entity, [String:Any]>
     
     func create(
         entity: Entity,

@@ -9,11 +9,15 @@
 import Foundation
 import FirebaseDatabase
 
+enum FirebaseDatabaseRepositoryError: Error {
+    case dataRetrieval
+    case mapping
+}
 
 struct FirebaseReadableRepository<Entity>: ReadableRepository {
     
     var route: DatabaseReference
-    var entityMapper: AnyMapper<DataSnapshot, Entity>
+    var entityMapper: AnyMapper<DataSnapshot, Entity?>
     var entityCollectionMapper: AnyMapper<DataSnapshot, [(EntityIdentifier, Entity)]>
     
     func entity(
@@ -21,7 +25,15 @@ struct FirebaseReadableRepository<Entity>: ReadableRepository {
         success: @escaping (Entity) -> Void,
         failure: @escaping (Error?) -> Void)
     {
-        route.child(identifier).single(.value, with: entityMapper, success: success, failure: failure)
+        route
+            .child(identifier)
+            .single(.value, with: entityMapper, success: { entity in
+                if let entity = entity {
+                    success(entity)
+                } else {
+                    failure(FirebaseDatabaseRepositoryError.mapping)
+                }
+            }, failure: failure)
     }
     
     func allEntities(
@@ -44,15 +56,11 @@ private extension DatabaseReference {
         observeSingleEvent(
             of: eventType,
             with: { dataSnapshot in
-                do {
-                    let entity = try mapper.map(dataSnapshot)
-                    success(entity)
-                } catch {
-                    failure(error)
-                }
+                let entity = mapper.map(dataSnapshot)
+                success(entity)
             },
             withCancel: { error in
-                failure(error)
+                failure(FirebaseDatabaseRepositoryError.dataRetrieval)
             }
         )
     }
