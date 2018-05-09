@@ -10,7 +10,7 @@ import UIKit
 
 class CreateIceCreamViewController: UIViewController {
     
-    weak var output: CreateIceCreamViewOutput?
+    var output: CreateIceCreamViewOutput?
     
     @IBOutlet private weak var nameField: UITextField!
     @IBOutlet private weak var weightField: UITextField!

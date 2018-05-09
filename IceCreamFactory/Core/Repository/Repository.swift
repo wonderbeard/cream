@@ -17,7 +17,7 @@ struct AnyRepository<Entity>: Repository {
     private let getEntity: (EntityIdentifier, @escaping (Entity) -> Void, @escaping (Error?) -> Void) -> Void
     private let getAllEntities: (@escaping ([(EntityIdentifier, Entity)]) -> Void, @escaping (Error?) -> Void) -> Void
     private let createEntity: (Entity,  @escaping (EntityIdentifier) -> Void, @escaping (Error?) -> Void) -> Void
-    private let updateEntity: (Entity, EntityIdentifier, @escaping  (Entity) -> Void, @escaping (Error?) -> Void) -> Void
+    private let updateEntity: (Entity, EntityIdentifier, @escaping  () -> Void, @escaping (Error?) -> Void) -> Void
     private let deleteEntity: (EntityIdentifier, @escaping  () -> Void, @escaping (Error?) -> Void) -> Void
     
     init<R: ReadableRepository, W: WritableRepository>(reader: R, writer: W) where R.Entity == Entity, W.Entity == Entity {
@@ -62,7 +62,7 @@ struct AnyRepository<Entity>: Repository {
     func update(
         entity: Entity,
         for identifier: EntityIdentifier,
-        success: @escaping (Entity) -> Void,
+        success: @escaping () -> Void,
         failure: @escaping (Error?) -> Void)
     {
         updateEntity(entity, identifier, success, failure)

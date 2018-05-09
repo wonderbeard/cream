@@ -17,6 +17,7 @@
 		91165DA820A243C70034D120 /* CreateIceCreamModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA720A243C70034D120 /* CreateIceCreamModuleAssembly.swift */; };
 		91165DAA20A2442F0034D120 /* CreateIceCreamInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA920A2442F0034D120 /* CreateIceCreamInteractor.swift */; };
 		91165DAD20A2471D0034D120 /* IceCreamWeightMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */; };
+		91973B7220A38FA000BEC521 /* FirebaseIceCreamMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B7120A38FA000BEC521 /* FirebaseIceCreamMapper.swift */; };
 		91CE876B20A0DA3C0029B367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91CE876A20A0DA3C0029B367 /* GoogleService-Info.plist */; };
 		91CE876D20A0DAC90029B367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91CE876C20A0DAC90029B367 /* GoogleService-Info.plist */; };
 		91CE877020A0DF1A0029B367 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE876F20A0DF1A0029B367 /* IceCream.swift */; };
@@ -52,6 +53,7 @@
 		91165DA720A243C70034D120 /* CreateIceCreamModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamModuleAssembly.swift; sourceTree = "<group>"; };
 		91165DA920A2442F0034D120 /* CreateIceCreamInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamInteractor.swift; sourceTree = "<group>"; };
 		91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamWeightMapper.swift; sourceTree = "<group>"; };
+		91973B7120A38FA000BEC521 /* FirebaseIceCreamMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseIceCreamMapper.swift; sourceTree = "<group>"; };
 		91CE876A20A0DA3C0029B367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91CE876C20A0DAC90029B367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91CE876F20A0DF1A0029B367 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */,
+				91973B7120A38FA000BEC521 /* FirebaseIceCreamMapper.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -184,7 +187,6 @@
 		91CE877820A0E8820029B367 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				91165DAB20A2470E0034D120 /* Shared */,
 				91165DAE20A24B3A0034D120 /* CreateIceCream */,
 			);
 			path = Modules;
@@ -202,6 +204,7 @@
 		91CE877A20A0E9DA0029B367 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				91165DAB20A2470E0034D120 /* Shared */,
 				91CE877C20A0EA550029B367 /* Firebase */,
 			);
 			path = Services;
@@ -500,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91973B7220A38FA000BEC521 /* FirebaseIceCreamMapper.swift in Sources */,
 				91165D9620A22A060034D120 /* CreateIceCreamViewInterface.swift in Sources */,
 				91165DAA20A2442F0034D120 /* CreateIceCreamInteractor.swift in Sources */,
 				91165D9820A22EB10034D120 /* CreateIceCreamViewController.swift in Sources */,

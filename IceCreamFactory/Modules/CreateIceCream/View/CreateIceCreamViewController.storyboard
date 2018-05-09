@@ -27,7 +27,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="edit:" destination="De5-yS-efG" eventType="valueChanged" id="dGU-La-X1w"/>
+                                            <action selector="edit:" destination="De5-yS-efG" eventType="editingChanged" id="m2m-5s-wkY"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBI-zj-Zcn">
@@ -36,7 +36,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="edit:" destination="De5-yS-efG" eventType="valueChanged" id="vYm-3J-2fj"/>
+                                            <action selector="edit:" destination="De5-yS-efG" eventType="editingChanged" id="nhR-KD-qlN"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8az-HL-m5F">
@@ -45,7 +45,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="edit:" destination="De5-yS-efG" eventType="editingDidEnd" id="C5U-vf-gY1"/>
+                                            <action selector="edit:" destination="De5-yS-efG" eventType="editingChanged" id="jFG-Mh-cxZ"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Flavor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83a-sC-TPe">
@@ -54,7 +54,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="edit:" destination="De5-yS-efG" eventType="valueChanged" id="bqE-2V-hrq"/>
+                                            <action selector="edit:" destination="De5-yS-efG" eventType="editingChanged" id="Gnm-YU-FGs"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24U-6f-a82">
@@ -63,7 +63,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="edit:" destination="De5-yS-efG" eventType="valueChanged" id="kyL-Bw-NRC"/>
+                                            <action selector="edit:" destination="De5-yS-efG" eventType="editingChanged" id="G14-0v-ef4"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rd-Qp-QK3">
