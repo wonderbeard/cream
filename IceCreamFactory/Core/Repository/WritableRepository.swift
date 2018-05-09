@@ -21,7 +21,7 @@ protocol WritableRepository {
     func update(
         entity: Entity,
         for identifier: EntityIdentifier,
-        success: @escaping (Entity) -> Void,
+        success: @escaping () -> Void,
         failure: @escaping (Error?) -> Void
     )
     
@@ -36,7 +36,7 @@ protocol WritableRepository {
 struct AnyWritableRepository<Entity>: WritableRepository {
     
     private let createEntity: (Entity,  @escaping (EntityIdentifier) -> Void, @escaping (Error?) -> Void) -> Void
-    private let updateEntity: (Entity, EntityIdentifier, @escaping  (Entity) -> Void, @escaping (Error?) -> Void) -> Void
+    private let updateEntity: (Entity, EntityIdentifier, @escaping  () -> Void, @escaping (Error?) -> Void) -> Void
     private let deleteEntity: (EntityIdentifier, @escaping  () -> Void, @escaping (Error?) -> Void) -> Void
     
     init<R: WritableRepository>(_ wrapped: R) where R.Entity == Entity {
@@ -56,7 +56,7 @@ struct AnyWritableRepository<Entity>: WritableRepository {
     func update(
         entity: Entity,
         for identifier: EntityIdentifier,
-        success: @escaping (Entity) -> Void,
+        success: @escaping () -> Void,
         failure: @escaping (Error?) -> Void)
     {
         updateEntity(entity, identifier, success, failure)

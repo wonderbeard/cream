@@ -19,24 +19,45 @@ struct FirebaseWritableRepository<Entity>: WritableRepository {
         success: @escaping (EntityIdentifier) -> Void,
         failure: @escaping (Error?) -> Void)
     {
-        
+        let entityJSON = entityMapper.map(entity)
+        let newEntity = route.childByAutoId()
+        newEntity.setValue(entityJSON) { (error, ref) in
+            if let error = error {
+                failure(error)
+            } else {
+                success(newEntity.key)
+            }
+        }
     }
     
     func update(
         entity: Entity,
         for identifier: EntityIdentifier,
-        success: @escaping (Entity) -> Void,
-        failure: @escaping (Error?) -> Void)
-    {
-        
-    }
-    
-    func delete(
-        entityWithID entityIdentifier: EntityIdentifier,
         success: @escaping () -> Void,
         failure: @escaping (Error?) -> Void)
     {
-        
+        let entityJSON = entityMapper.map(entity)
+        route.child(identifier).updateChildValues(entityJSON) { (error, ref) in
+            if let error = error {
+                failure(error)
+            } else {
+                success()
+            }
+        }
+    }
+    
+    func delete(
+        entityWithID identifier: EntityIdentifier,
+        success: @escaping () -> Void,
+        failure: @escaping (Error?) -> Void)
+    {
+        route.child(identifier).removeValue { (error, ref) in
+            if let error = error {
+                failure(error)
+            } else {
+                success()
+            }
+        }
     }
     
 }
