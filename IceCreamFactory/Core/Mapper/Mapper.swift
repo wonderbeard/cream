@@ -25,6 +25,10 @@ struct AnyMapper<Input, Output>: Mapper {
         performMap = wrapped.map
     }
     
+    init(_ mapping: @escaping (Input) -> Output) {
+        performMap = mapping
+    }
+    
     func map(_ input: Input) -> Output {
         return performMap(input)
     }

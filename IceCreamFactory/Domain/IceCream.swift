@@ -13,7 +13,7 @@ struct IceCream {
     var weight: Double?
     var color: String?
     var flavor: String?
-    var temp: String?
+    var temp: Double?
 }
 
 extension IceCream {
