@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol CreateIceCreamModuleInput {
-    
-}
-
 protocol CreateIceCreamPresenterOutput: class {
     
     func didCreateIceCream(_ iceCream: IceCream)

@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct FirebaseIceCreamMapper: Mapper {
+struct IceCreamToFirebasObjectMapper: Mapper {
     
-    func map(_ iceCream: IceCream) -> [String:Any] {
+    func map(_ iceCream: IceCream) -> [String: Any] {
         return [
             "name": iceCream.name,
             "weight": iceCream.weight as Any,

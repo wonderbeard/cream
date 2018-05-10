@@ -8,12 +8,13 @@
 
 import Foundation
 
-class CreateIceCreamPresenter: CreateIceCreamModuleInput {
+class CreateIceCreamPresenter {
     
     weak var output: CreateIceCreamPresenterOutput?
     var view: CreateIceCreamViewInput!
     var interactor: CreateIceCreamInteractorInput!
     var weightMapper: AnyBidirectionalMapper<Double?, String?>!
+    var temperatureMapper: AnyBidirectionalMapper<Double?, String?>!
     
     private var iceCream: IceCream = .empty
     
@@ -27,7 +28,8 @@ extension CreateIceCreamPresenter: CreateIceCreamViewOutput {
         view.set(.weight(weight))
         view.set(.color(iceCream.color))
         view.set(.flavor(iceCream.flavor))
-        view.set(.temp(iceCream.temp))
+        let temp = temperatureMapper.map(iceCream.temp)
+        view.set(.temp(temp))
     }
     
     func didUpdate(_ field: CreateIceCreamViewField) {
@@ -41,7 +43,7 @@ extension CreateIceCreamPresenter: CreateIceCreamViewOutput {
         case .flavor(let flavor):
             iceCream.flavor = flavor
         case .temp(let temp):
-            iceCream.temp = temp
+            iceCream.temp = temperatureMapper.reverseMap(temp)
         }
     }
     
