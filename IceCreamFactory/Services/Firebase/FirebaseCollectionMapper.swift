@@ -24,35 +24,3 @@ struct FirebaseCollectionMapper<Entity>: Mapper {
     }
     
 }
-
-extension Reactive where Base: DatabaseQuery {
-    
-    func observe(_ eventType: DataEventType) -> Observable<DataSnapshot> {
-        return Observable.create { [ref = base] observer in
-            
-            let subscription = ref.observe(eventType, with: { snapshot in
-                
-                observer.onNext(snapshot)
-                
-            }, withCancel: observer.onError)
-            
-            return Disposables.create {
-                ref.removeObserver(withHandle: subscription)
-            }
-        }
-    }
-    
-//    func observeCollectionChanges() -> Observable<CollectionEvent<FirebaseEntity>> {
-//        return Observable.merge(
-//            observeCollection(.childAdded).map(CollectionEvent.added),
-//            observeCollection(.childChanged).map(CollectionEvent.changed),
-//            observeCollection(.childRemoved).map(CollectionEvent.removed)
-//        )
-//    }
-//
-//    private func observeCollection(_ event: FIRDataEventType) -> Observable<FirebaseEntity> {
-//        return observe(event)
-//            .filter{ $0.value is FirebaseObject }
-//            .map{ snapshot in (snapshot.key, snapshot.value as! FirebaseObject) }
-//    }
-}
