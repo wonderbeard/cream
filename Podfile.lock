@@ -1,5 +1,4 @@
 PODS:
-  - Differentiator (3.0.2)
   - Firebase/Core (4.13.0):
     - FirebaseAnalytics (= 4.2.0)
     - FirebaseCore (= 4.0.20)
@@ -28,24 +27,13 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - RxCocoa (4.1.2):
-    - RxSwift (~> 4.0)
-  - RxDataSources (3.0.2):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.1.2)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
-  - RxCocoa
-  - RxDataSources
-  - RxSwift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Differentiator
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -54,12 +42,8 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - leveldb-library
     - nanopb
-    - RxCocoa
-    - RxDataSources
-    - RxSwift
 
 SPEC CHECKSUMS:
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
@@ -68,10 +52,7 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
-  RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: f35810ea843cfa2e96900a0abfe516c65dd811ac
+PODFILE CHECKSUM: 7720da8432e8968807e059152b7af2d1567834c1
 
 COCOAPODS: 1.5.0

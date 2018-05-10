@@ -8,7 +8,6 @@
 
 import Foundation
 import FirebaseDatabase
-import RxSwift
 
 struct FirebaseCollectionMapper<Entity>: Mapper {
     
