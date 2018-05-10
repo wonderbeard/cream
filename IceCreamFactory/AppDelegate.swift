@@ -28,20 +28,42 @@ extension AppDelegate: UIApplicationDelegate {
         Database.database().isPersistenceEnabled = true
         let iceCreamDatabaseRef = Database.database().reference(withPath: "iceCream")
         
-        let board = UIStoryboard(name: "CreateIceCreamViewController", bundle: .main)
-        let view = board.instantiateInitialViewController() as! CreateIceCreamViewController
-        let presenter = CreateIceCreamPresenter()
-        let interactor = CreateIceCreamInteractor(
-            iceCreamRepository: FirebaseWritableRepository(
+//        let board = UIStoryboard(name: "CreateIceCreamViewController", bundle: .main)
+//        let view = board.instantiateInitialViewController() as! CreateIceCreamViewController
+//        let presenter = CreateIceCreamPresenter()
+//        let interactor = CreateIceCreamInteractor(
+//            iceCreamRepository: FirebaseWritableRepository(
+//                route: iceCreamDatabaseRef,
+//                entityMapper: AnyMapper(FirebaseIceCreamMapper())
+//            )
+//        )
+//
+//        let assembly = CreateIceCreamAssembly(
+//            view: view,
+//            interactor: interactor,
+//            presenter: presenter
+//        )
+//        let (_, moduleView) = assembly.assemble()
+        
+        let snapshotValueMapper = AnyMapper{ (snapshot: DataSnapshot) in (snapshot.value as? [String:Any]) ?? [:] }
+        let iceCreamMapper = AnyMapper(FirebaseObjectToIceCreamMapper())
+        
+        let board = UIStoryboard(name: "IceCreamListViewController", bundle: .main)
+        let view = board.instantiateInitialViewController() as! IceCreamListViewController
+        let presenter = IceCreamListPresenter()
+        let interactor = IceCreamListInteractor(
+            iceCreamRepository: FirebaseReadableRepository(
                 route: iceCreamDatabaseRef,
-                entityMapper: AnyMapper(FirebaseIceCreamMapper())
+                dataFetchStrategy: ObserveValueFirebaseDataFetchStrategy(),
+                entityMapper: AnyMapper(TransitMapper(snapshotValueMapper, iceCreamMapper)),
+                entityCollectionMapper: AnyMapper(FirebaseCollectionMapper(entityMapper: iceCreamMapper))
             )
         )
         
-        let assembly = CreateIceCreamAssembly(
+        let assembly = IceCreamListModuleAssembly(
             view: view,
-            interactor: interactor,
-            presenter: presenter
+            presenter: presenter,
+            interactor: interactor
         )
         let (_, moduleView) = assembly.assemble()
         

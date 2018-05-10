@@ -17,7 +17,29 @@
 		91165DA820A243C70034D120 /* CreateIceCreamModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA720A243C70034D120 /* CreateIceCreamModuleAssembly.swift */; };
 		91165DAA20A2442F0034D120 /* CreateIceCreamInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DA920A2442F0034D120 /* CreateIceCreamInteractor.swift */; };
 		91165DAD20A2471D0034D120 /* IceCreamWeightMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */; };
-		91973B7220A38FA000BEC521 /* FirebaseIceCreamMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B7120A38FA000BEC521 /* FirebaseIceCreamMapper.swift */; };
+		91973B7220A38FA000BEC521 /* IceCreamToFirebaseObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B7120A38FA000BEC521 /* IceCreamToFirebaseObjectMapper.swift */; };
+		91973B7620A3988300BEC521 /* IceCreamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B7520A3988300BEC521 /* IceCreamListViewController.swift */; };
+		91973B7820A3989100BEC521 /* IceCreamListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91973B7720A3989100BEC521 /* IceCreamListViewController.storyboard */; };
+		91973B7A20A39A7D00BEC521 /* IceCreamListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B7920A39A7D00BEC521 /* IceCreamListTableViewCell.swift */; };
+		91973B7C20A39B0500BEC521 /* IceCreamListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B7B20A39B0500BEC521 /* IceCreamListViewInterface.swift */; };
+		91973B7F20A39DA400BEC521 /* IceCreamListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B7E20A39DA400BEC521 /* IceCreamListPresenter.swift */; };
+		91973B8220A39E1800BEC521 /* IceCreamListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B8120A39E1800BEC521 /* IceCreamListInteractor.swift */; };
+		91973B8420A39E3F00BEC521 /* IceCreamListInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B8320A39E3F00BEC521 /* IceCreamListInteractorInterface.swift */; };
+		91973B8920A3A3C700BEC521 /* FirebaseDataFetchStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B8820A3A3C700BEC521 /* FirebaseDataFetchStrategy.swift */; };
+		91973B8B20A3A3DB00BEC521 /* SingleValueFirebaseDataFetchStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B8A20A3A3DB00BEC521 /* SingleValueFirebaseDataFetchStrategy.swift */; };
+		91973B8D20A3A3F100BEC521 /* ObserveValueFirebaseDataFetchStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B8C20A3A3F100BEC521 /* ObserveValueFirebaseDataFetchStrategy.swift */; };
+		91973B8F20A3ABD300BEC521 /* IceCreamTemperatureMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B8E20A3ABD300BEC521 /* IceCreamTemperatureMapper.swift */; };
+		91973B9220A3AC9F00BEC521 /* IceCreamListModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B9120A3AC9F00BEC521 /* IceCreamListModuleAssembly.swift */; };
+		91973B9620A3AD6B00BEC521 /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B9520A3AD6B00BEC521 /* ModuleAssembly.swift */; };
+		91973B9820A3AF7E00BEC521 /* UppercasedStringMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B9720A3AF7E00BEC521 /* UppercasedStringMapper.swift */; };
+		91973B9A20A3B00200BEC521 /* CapitalizedStringMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B9920A3B00200BEC521 /* CapitalizedStringMapper.swift */; };
+		91973B9C20A3B1F600BEC521 /* NumberFormatterBidirectionalMapperAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B9B20A3B1F600BEC521 /* NumberFormatterBidirectionalMapperAdapter.swift */; };
+		91973B9E20A3B23400BEC521 /* OptionalizeMapperOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B9D20A3B23400BEC521 /* OptionalizeMapperOutput.swift */; };
+		91973BA020A3B2F600BEC521 /* OptionalizeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973B9F20A3B2F600BEC521 /* OptionalizeMapper.swift */; };
+		91973BA220A3B54B00BEC521 /* OptionalizeMapperInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973BA120A3B54B00BEC521 /* OptionalizeMapperInput.swift */; };
+		91973BA520A3B79C00BEC521 /* FirebaseCollectionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973BA420A3B79C00BEC521 /* FirebaseCollectionMapper.swift */; };
+		91973BA720A3BF4400BEC521 /* FirebaseObjectToIceCreamMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973BA620A3BF4400BEC521 /* FirebaseObjectToIceCreamMapper.swift */; };
+		91973BA920A3BFD700BEC521 /* TransitMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91973BA820A3BFD700BEC521 /* TransitMapper.swift */; };
 		91CE876B20A0DA3C0029B367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91CE876A20A0DA3C0029B367 /* GoogleService-Info.plist */; };
 		91CE876D20A0DAC90029B367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91CE876C20A0DAC90029B367 /* GoogleService-Info.plist */; };
 		91CE877020A0DF1A0029B367 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE876F20A0DF1A0029B367 /* IceCream.swift */; };
@@ -53,7 +75,29 @@
 		91165DA720A243C70034D120 /* CreateIceCreamModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamModuleAssembly.swift; sourceTree = "<group>"; };
 		91165DA920A2442F0034D120 /* CreateIceCreamInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCreamInteractor.swift; sourceTree = "<group>"; };
 		91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamWeightMapper.swift; sourceTree = "<group>"; };
-		91973B7120A38FA000BEC521 /* FirebaseIceCreamMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseIceCreamMapper.swift; sourceTree = "<group>"; };
+		91973B7120A38FA000BEC521 /* IceCreamToFirebaseObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamToFirebaseObjectMapper.swift; sourceTree = "<group>"; };
+		91973B7520A3988300BEC521 /* IceCreamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListViewController.swift; sourceTree = "<group>"; };
+		91973B7720A3989100BEC521 /* IceCreamListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IceCreamListViewController.storyboard; sourceTree = "<group>"; };
+		91973B7920A39A7D00BEC521 /* IceCreamListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListTableViewCell.swift; sourceTree = "<group>"; };
+		91973B7B20A39B0500BEC521 /* IceCreamListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListViewInterface.swift; sourceTree = "<group>"; };
+		91973B7E20A39DA400BEC521 /* IceCreamListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListPresenter.swift; sourceTree = "<group>"; };
+		91973B8120A39E1800BEC521 /* IceCreamListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListInteractor.swift; sourceTree = "<group>"; };
+		91973B8320A39E3F00BEC521 /* IceCreamListInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListInteractorInterface.swift; sourceTree = "<group>"; };
+		91973B8820A3A3C700BEC521 /* FirebaseDataFetchStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataFetchStrategy.swift; sourceTree = "<group>"; };
+		91973B8A20A3A3DB00BEC521 /* SingleValueFirebaseDataFetchStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueFirebaseDataFetchStrategy.swift; sourceTree = "<group>"; };
+		91973B8C20A3A3F100BEC521 /* ObserveValueFirebaseDataFetchStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveValueFirebaseDataFetchStrategy.swift; sourceTree = "<group>"; };
+		91973B8E20A3ABD300BEC521 /* IceCreamTemperatureMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamTemperatureMapper.swift; sourceTree = "<group>"; };
+		91973B9120A3AC9F00BEC521 /* IceCreamListModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamListModuleAssembly.swift; sourceTree = "<group>"; };
+		91973B9520A3AD6B00BEC521 /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
+		91973B9720A3AF7E00BEC521 /* UppercasedStringMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UppercasedStringMapper.swift; sourceTree = "<group>"; };
+		91973B9920A3B00200BEC521 /* CapitalizedStringMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalizedStringMapper.swift; sourceTree = "<group>"; };
+		91973B9B20A3B1F600BEC521 /* NumberFormatterBidirectionalMapperAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterBidirectionalMapperAdapter.swift; sourceTree = "<group>"; };
+		91973B9D20A3B23400BEC521 /* OptionalizeMapperOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalizeMapperOutput.swift; sourceTree = "<group>"; };
+		91973B9F20A3B2F600BEC521 /* OptionalizeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalizeMapper.swift; sourceTree = "<group>"; };
+		91973BA120A3B54B00BEC521 /* OptionalizeMapperInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalizeMapperInput.swift; sourceTree = "<group>"; };
+		91973BA420A3B79C00BEC521 /* FirebaseCollectionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionMapper.swift; sourceTree = "<group>"; };
+		91973BA620A3BF4400BEC521 /* FirebaseObjectToIceCreamMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseObjectToIceCreamMapper.swift; sourceTree = "<group>"; };
+		91973BA820A3BFD700BEC521 /* TransitMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitMapper.swift; sourceTree = "<group>"; };
 		91CE876A20A0DA3C0029B367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91CE876C20A0DAC90029B367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91CE876F20A0DF1A0029B367 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
@@ -151,7 +195,10 @@
 			isa = PBXGroup;
 			children = (
 				91165DAC20A2471D0034D120 /* IceCreamWeightMapper.swift */,
-				91973B7120A38FA000BEC521 /* FirebaseIceCreamMapper.swift */,
+				91973B8E20A3ABD300BEC521 /* IceCreamTemperatureMapper.swift */,
+				91973B9B20A3B1F600BEC521 /* NumberFormatterBidirectionalMapperAdapter.swift */,
+				91973B9720A3AF7E00BEC521 /* UppercasedStringMapper.swift */,
+				91973B9920A3B00200BEC521 /* CapitalizedStringMapper.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -167,6 +214,72 @@
 			path = CreateIceCream;
 			sourceTree = "<group>";
 		};
+		91973B7320A3986300BEC521 /* IceCreamList */ = {
+			isa = PBXGroup;
+			children = (
+				91973B7420A3986D00BEC521 /* View */,
+				91973B7D20A39D9800BEC521 /* Presenter */,
+				91973B8020A39E0B00BEC521 /* Interactor */,
+				91973B9020A3AC7F00BEC521 /* Assembly */,
+			);
+			path = IceCreamList;
+			sourceTree = "<group>";
+		};
+		91973B7420A3986D00BEC521 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91973B7B20A39B0500BEC521 /* IceCreamListViewInterface.swift */,
+				91973B7520A3988300BEC521 /* IceCreamListViewController.swift */,
+				91973B7920A39A7D00BEC521 /* IceCreamListTableViewCell.swift */,
+				91973B7720A3989100BEC521 /* IceCreamListViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91973B7D20A39D9800BEC521 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91973B7E20A39DA400BEC521 /* IceCreamListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		91973B8020A39E0B00BEC521 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91973B8320A39E3F00BEC521 /* IceCreamListInteractorInterface.swift */,
+				91973B8120A39E1800BEC521 /* IceCreamListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		91973B8720A3A3C000BEC521 /* FirebaseDataFetchStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				91973B8820A3A3C700BEC521 /* FirebaseDataFetchStrategy.swift */,
+				91973B8A20A3A3DB00BEC521 /* SingleValueFirebaseDataFetchStrategy.swift */,
+				91973B8C20A3A3F100BEC521 /* ObserveValueFirebaseDataFetchStrategy.swift */,
+			);
+			path = FirebaseDataFetchStrategy;
+			sourceTree = "<group>";
+		};
+		91973B9020A3AC7F00BEC521 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				91973B9120A3AC9F00BEC521 /* IceCreamListModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		91973BA320A3B5EF00BEC521 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				91CE877D20A0ED430029B367 /* FirebaseReadableRepository.swift */,
+				91CE877F20A0ED510029B367 /* FirebaseWritableRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		91CE876E20A0DF0A0029B367 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +293,7 @@
 			children = (
 				91CE878120A0EF2D0029B367 /* Mapper */,
 				91CE877B20A0E9EA0029B367 /* Repository */,
+				91973B9520A3AD6B00BEC521 /* ModuleAssembly.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -187,6 +301,7 @@
 		91CE877820A0E8820029B367 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				91973B7320A3986300BEC521 /* IceCreamList */,
 				91165DAE20A24B3A0034D120 /* CreateIceCream */,
 			);
 			path = Modules;
@@ -223,8 +338,11 @@
 		91CE877C20A0EA550029B367 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				91CE877D20A0ED430029B367 /* FirebaseReadableRepository.swift */,
-				91CE877F20A0ED510029B367 /* FirebaseWritableRepository.swift */,
+				91973B7120A38FA000BEC521 /* IceCreamToFirebaseObjectMapper.swift */,
+				91973BA620A3BF4400BEC521 /* FirebaseObjectToIceCreamMapper.swift */,
+				91973BA420A3B79C00BEC521 /* FirebaseCollectionMapper.swift */,
+				91973B8720A3A3C000BEC521 /* FirebaseDataFetchStrategy */,
+				91973BA320A3B5EF00BEC521 /* Repository */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -234,6 +352,10 @@
 			children = (
 				91CE878220A0EF350029B367 /* Mapper.swift */,
 				91165DA420A240AE0034D120 /* BidirectionalMapper.swift */,
+				91973BA820A3BFD700BEC521 /* TransitMapper.swift */,
+				91973B9D20A3B23400BEC521 /* OptionalizeMapperOutput.swift */,
+				91973BA120A3B54B00BEC521 /* OptionalizeMapperInput.swift */,
+				91973B9F20A3B2F600BEC521 /* OptionalizeMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -383,6 +505,7 @@
 				91CE876B20A0DA3C0029B367 /* GoogleService-Info.plist in Resources */,
 				91165D9A20A22EC60034D120 /* CreateIceCreamViewController.storyboard in Resources */,
 				91E650C420A0D7EC0093800E /* Assets.xcassets in Resources */,
+				91973B7820A3989100BEC521 /* IceCreamListViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,24 +626,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91973B7220A38FA000BEC521 /* FirebaseIceCreamMapper.swift in Sources */,
+				91973B7220A38FA000BEC521 /* IceCreamToFirebaseObjectMapper.swift in Sources */,
+				91973B8D20A3A3F100BEC521 /* ObserveValueFirebaseDataFetchStrategy.swift in Sources */,
+				91973B8420A39E3F00BEC521 /* IceCreamListInteractorInterface.swift in Sources */,
+				91973BA220A3B54B00BEC521 /* OptionalizeMapperInput.swift in Sources */,
+				91973B9A20A3B00200BEC521 /* CapitalizedStringMapper.swift in Sources */,
 				91165D9620A22A060034D120 /* CreateIceCreamViewInterface.swift in Sources */,
 				91165DAA20A2442F0034D120 /* CreateIceCreamInteractor.swift in Sources */,
 				91165D9820A22EB10034D120 /* CreateIceCreamViewController.swift in Sources */,
+				91973B7620A3988300BEC521 /* IceCreamListViewController.swift in Sources */,
 				91165DA820A243C70034D120 /* CreateIceCreamModuleAssembly.swift in Sources */,
+				91973B9220A3AC9F00BEC521 /* IceCreamListModuleAssembly.swift in Sources */,
+				91973BA920A3BFD700BEC521 /* TransitMapper.swift in Sources */,
+				91973B7A20A39A7D00BEC521 /* IceCreamListTableViewCell.swift in Sources */,
+				91973B7F20A39DA400BEC521 /* IceCreamListPresenter.swift in Sources */,
 				91165DA320A2353A0034D120 /* CreateIceCreamPresenterInterface.swift in Sources */,
 				91165D9E20A234DC0034D120 /* CreateIceCreamPresenter.swift in Sources */,
 				91CE877E20A0ED430029B367 /* FirebaseReadableRepository.swift in Sources */,
+				91973B9620A3AD6B00BEC521 /* ModuleAssembly.swift in Sources */,
+				91973B8920A3A3C700BEC521 /* FirebaseDataFetchStrategy.swift in Sources */,
+				91973B9C20A3B1F600BEC521 /* NumberFormatterBidirectionalMapperAdapter.swift in Sources */,
 				91E650BD20A0D7EA0093800E /* AppDelegate.swift in Sources */,
 				91CE878020A0ED510029B367 /* FirebaseWritableRepository.swift in Sources */,
+				91973BA520A3B79C00BEC521 /* FirebaseCollectionMapper.swift in Sources */,
+				91973B7C20A39B0500BEC521 /* IceCreamListViewInterface.swift in Sources */,
 				91CE877520A0E7710029B367 /* WritableRepository.swift in Sources */,
+				91973B9E20A3B23400BEC521 /* OptionalizeMapperOutput.swift in Sources */,
+				91973B8F20A3ABD300BEC521 /* IceCreamTemperatureMapper.swift in Sources */,
+				91973B8B20A3A3DB00BEC521 /* SingleValueFirebaseDataFetchStrategy.swift in Sources */,
 				91165DAD20A2471D0034D120 /* IceCreamWeightMapper.swift in Sources */,
+				91973B8220A39E1800BEC521 /* IceCreamListInteractor.swift in Sources */,
 				91165DA520A240AE0034D120 /* BidirectionalMapper.swift in Sources */,
 				91165DA120A234FF0034D120 /* CreateIceCreamInteractorInterface.swift in Sources */,
 				91CE878320A0EF350029B367 /* Mapper.swift in Sources */,
+				91973BA020A3B2F600BEC521 /* OptionalizeMapper.swift in Sources */,
 				91CE877720A0E7840029B367 /* ReadableRepository.swift in Sources */,
+				91973BA720A3BF4400BEC521 /* FirebaseObjectToIceCreamMapper.swift in Sources */,
 				91CE877020A0DF1A0029B367 /* IceCream.swift in Sources */,
 				91CE877320A0DF980029B367 /* Repository.swift in Sources */,
+				91973B9820A3AF7E00BEC521 /* UppercasedStringMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
