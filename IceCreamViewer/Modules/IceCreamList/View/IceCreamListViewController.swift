@@ -10,7 +10,7 @@ import UIKit
 
 class IceCreamListViewController: UIViewController, IceCreamListViewInput {
     
-    weak var output: IceCreamListViewOutput?
+    var output: IceCreamListViewOutput?
     
     @IBOutlet private weak var tableView: UITableView!
     

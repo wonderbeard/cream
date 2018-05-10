@@ -53,7 +53,7 @@ struct FirebaseReadableRepository<Entity>: ReadableRepository {
         failure reject: @escaping (Error?) -> Void)
     {
         fetchData(
-            from: route,
+            from: route.queryOrderedByKey(),
             using: entityCollectionMapper,
             success: resolve,
             failure: { error in
@@ -63,7 +63,7 @@ struct FirebaseReadableRepository<Entity>: ReadableRepository {
     }
     
     private func fetchData<T>(
-        from route: DatabaseReference,
+        from route: DatabaseQuery,
         using mapper: AnyMapper<DataSnapshot, T?>,
         success resolve: @escaping (T) -> Void,
         failure reject: @escaping (FirebaseRepositoryError) -> Void)

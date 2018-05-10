@@ -8,19 +8,18 @@
 
 import UIKit
 
-struct CreateIceCreamAssembly: ModuleAssembly {
+struct CreateIceCreamAssembler {
     
     var view: CreateIceCreamViewController
     var interactor: CreateIceCreamInteractor
     var presenter: CreateIceCreamPresenter
     
-    func assemble() -> (Void, UIViewController) {
+    func assembly() {
         view.output = presenter
         presenter.view = view
         presenter.interactor = interactor
         presenter.weightMapper = AnyBidirectionalMapper(IceCreamWeightMapper())
         presenter.temperatureMapper = AnyBidirectionalMapper(NumberFormatterBidirectionalMapperAdapter(NumberFormatter()))
-        return ((), view)
     }
     
 }

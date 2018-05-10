@@ -1,5 +1,5 @@
 //
-//  SingleValueFirebaseDataFetchStrategy.swift
+//  ObserveValueFirebaseDataFetchStrategy.swift
 //  IceCreamFactory
 //
 //  Created by Andrew Malyarchuk on 10.05.2018.
@@ -9,14 +9,14 @@
 import Foundation
 import FirebaseDatabase
 
-struct SingleValueFirebaseDataFetchStrategy: FirebaseDataFetchStrategy {
+struct ObserveValueFirebaseDataFetchStrategy: FirebaseDataFetchStrategy {
     
     func fetch(
-        from reference: DatabaseReference,
+        from route: DatabaseQuery,
         success: @escaping (DataSnapshot) -> Void,
         failure: @escaping (Error) -> Void)
     {
-        reference.observeSingleEvent(of: .value, with: success, withCancel: failure)
+        route.observe(.value, with: success, withCancel: failure)
     }
     
 }

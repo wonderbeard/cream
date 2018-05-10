@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct IceCreamToFirebasObjectMapper: Mapper {
+struct IceCreamToFirebaseObjectMapper: Mapper {
     
     func map(_ iceCream: IceCream) -> [String: Any] {
         return [

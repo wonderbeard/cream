@@ -12,7 +12,7 @@ import FirebaseDatabase
 protocol FirebaseDataFetchStrategy {
     
     func fetch(
-        from reference: DatabaseReference,
+        from route: DatabaseQuery,
         success: @escaping (DataSnapshot) -> Void,
         failure: @escaping (Error) -> Void
     )
